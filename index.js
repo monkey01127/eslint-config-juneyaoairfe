@@ -1,8 +1,20 @@
+/*
+ * @Author: lijuan.sun
+ * @Date: 2021-06-15 16:48:34
+ * @LastEditors: lijuan.sun
+ * @LastEditTime: 2021-06-16 17:05:12
+ * @PageTitle: ES6的语法配置页面
+ * @Description: 详细的描述了解析器的属性配置与规则说明.
+ * @FilePath: /eslint-config-juneyaoairfe/index.js
+ */
+
 const rules = require('./rules');
 
+// 配置参考地址：https://eslint.bootcss.com/docs/user-guide/configuring
 module.exports = {
+  // 检查目录为当前目录为起点
   'root': true,
-
+  // 全局环境变量
   'env': {
     'browser': true,
     'node': true,
@@ -10,7 +22,7 @@ module.exports = {
     'mocha': false,
     'jasmine': false
   },
-
+  // 解析器选项
   'parserOptions': {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -19,9 +31,13 @@ module.exports = {
       'jsx': true
     }
   },
-
+  // 规则
   'rules': {
+    // 禁用var，用let和const代替
+    "no-var": 0,
+    // 在对象中使用getter/setter
     'accessor-pairs': 2,
+    // =>的前/后括号
     'arrow-spacing': [2, {
       'before': true,
       'after': true
@@ -43,7 +59,12 @@ module.exports = {
     'curly': [2, 'multi-line'],
     'dot-location': [2, 'property'],
     'eol-last': 2,
+    // 必须使用全等
     'eqeqeq': [2, 'allow-null'],
+    // 嵌套块深度
+    "max-depth": [0, 4],
+    //字符串最大长度
+    "max-len": [0, 80, 4],
     'generator-star-spacing': [2, {
       'before': true,
       'after': true
@@ -162,13 +183,16 @@ module.exports = {
       'avoidEscape': true,
       'allowTemplateLiterals': true
     }],
+    // 语句不加分号
     'semi': [2, 'never'],
+    // 强制分号之后有空格，禁止分号之前有空格
     'semi-spacing': [2, {
       'before': false,
       'after': true
     }],
     'space-before-blocks': [2, 'always'],
     'space-before-function-paren': [2, 'always'],
+    // 小括号里面要不要有空格
     'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
     'space-unary-ops': [2, {
