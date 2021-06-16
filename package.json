@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/monkey01127/eslint-config-juneyaoairfe/issues"
   },
-  "homepage": "https://github.com/monkey01127/eslint-config-juneyaoairfe#readme"
+  "homepage": "https://github.com/monkey01127/eslint-config-juneyaoairfe#readme",
+  "dependencies": {}
 }
