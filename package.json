@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-juneyaoairfe",
+  "version": "1.1.2",
+  "description": "eslint Config  for juneyaoair fe team.s",
+  "author": "sunlijuan <sunlijuan@juneyaoair.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkey01127/eslint-config-juneyaoairfe.git"
+  },
+  "keywords": [
+    "eslint",
+    "juneyaoairfe"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monkey01127/eslint-config-juneyaoairfe/issues"
+  },
+  "homepage": "https://github.com/monkey01127/eslint-config-juneyaoairfe#readme"
+}
