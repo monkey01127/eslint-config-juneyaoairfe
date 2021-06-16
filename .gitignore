@@ -2,5 +2,7 @@
 *.swp
 .idea
 .DS_Store
-.vscode
 node_modules
+
+# 编辑器
+.vscode
